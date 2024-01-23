@@ -1,0 +1,9 @@
+pink: E43350
+heading red: BD352E
+logo gradient dark:E23051
+logo gradient light: FD7636
+Black : 000000
+Status bar: BD352E
+selected icon in status bar: A00000
+Filter option bg color: FF9090
+Filter option text and icon color: E43350
