@@ -1,0 +1,6 @@
+com.example.login_singup.test.app-core-1.5.0-0 C:\Users\Musti Tanvir\.gradle\caches\transforms-3\4b1f0787700ccd7ac6c94a26acbfa747\transformed\core-1.5.0\res
+com.example.login_singup.test.app-annotation-experimental-1.3.0-1 C:\Users\Musti Tanvir\.gradle\caches\transforms-3\70d510d1ea77f94adf002972dd3d1d16\transformed\annotation-experimental-1.3.0\res
+com.example.login_singup.test.app-androidTest-2 C:\Users\Musti Tanvir\Documents\GitHub\GameOfCodes---Event-Ticking-App---MAD-Project--Fall2023\login_singup\app\build\generated\res\resValues\androidTest\debug
+com.example.login_singup.test.app-mergeDebugAndroidTestResources-3 C:\Users\Musti Tanvir\Documents\GitHub\GameOfCodes---Event-Ticking-App---MAD-Project--Fall2023\login_singup\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.login_singup.test.app-mergeDebugAndroidTestResources-4 C:\Users\Musti Tanvir\Documents\GitHub\GameOfCodes---Event-Ticking-App---MAD-Project--Fall2023\login_singup\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.login_singup.test.app-merged_res-5 C:\Users\Musti Tanvir\Documents\GitHub\GameOfCodes---Event-Ticking-App---MAD-Project--Fall2023\login_singup\app\build\intermediates\merged_res\debugAndroidTest
