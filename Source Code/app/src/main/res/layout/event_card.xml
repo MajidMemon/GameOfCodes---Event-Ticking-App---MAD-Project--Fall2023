@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/eventCardLayout">
+
+        <!-- Upper card code i.e. image, date, etc. -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            app:cardCornerRadius="12dp">
+
+            <!-- Event Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:id="@+id/card_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/event_default"/>
+
+            <!-- Card Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Dj Party"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:id="@+id/eventTitle"/>
+
+            <!-- Card Date container -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:weightSum="10"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="7.5"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <!-- Event Date -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="25"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/textBlue"
+                            android:id="@+id/eventDate"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:background="@color/lightBlue"
+                        android:orientation="vertical">
+
+                        <!-- Event month -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="APR"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:id="@+id/eventMonth"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Location description -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="start|center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_add_location_24"/>
+
+                <!-- Event location text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="Clifton Beach"
+                    android:id="@+id/eventLocation"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
