@@ -11,4 +11,18 @@
     <color name="greenText">#65a765</color>
     <color name="redBackground">#ffbfbf</color>
     <color name="redText">#b30000</color>
+    <color name="toolbarColor">#fca311</color>
+
+    <color name="lightFloatingColor">#14213d</color>
+    <color name="darkFloatingColor">#009EFF</color>
+    <!--    <color name="date_text_color">#FFD600</color>-->
+    <color name="swa">#219ebc</color>
+    <color name="sw">#8ecae6</color>
+    <color name="background_color">#FFFFFFFF</color>
+
+    <color name="colorTextPrimary">#767980</color>
+    <color name="colorTextOther">#FAD303</color>
+    <color name="colorTextSecondary">#4A5B82</color>
+    <color name="label">#BD0F03</color>
+    <color name="main_color">#8086242A</color>
 </resources>
