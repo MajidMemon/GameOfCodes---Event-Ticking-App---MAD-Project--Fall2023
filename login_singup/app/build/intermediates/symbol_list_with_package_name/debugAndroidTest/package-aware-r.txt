@@ -1,3 +1,0 @@
-com.example.login_singup.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
