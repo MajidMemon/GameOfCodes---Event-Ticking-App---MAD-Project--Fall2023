@@ -1,13 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    android:orientation="vertical"
+    tools:context=".UserEvents">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <!-- Top bar containing name, logo and notifications button -->
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Page" />
-</FrameLayout>
+        android:padding="16dp">
+
+        <!-- App Logo with smaller size -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/app_logo"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/appLogo"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Notification Button aligned to the end of the screen -->
+        <ImageView
+            android:id="@+id/notificationButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/baseline_circle_notifications_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+
+    <!-- Search box containing, sort and search -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:id="@+id/searchBox">
+
+        <!-- Search Icon, Search Bar, and Filter Icon -->
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_search_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"/>
+
+        <ImageView
+            android:id="@+id/filterIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_sort_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Scroll View for event cards -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <!-- Main container where cards will be created -->
+        <LinearLayout
+            android:id="@+id/cardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/accentRed"/>
+
+            <!-- Select Your Favorite Event Text -->
+            <TextView
+                android:id="@+id/textViewSelectEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your favorite events"
+                android:textSize="20sp"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/eventCardRecycler"/>
+
+            <!-- Card code -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

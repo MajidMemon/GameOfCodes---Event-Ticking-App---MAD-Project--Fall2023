@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
         val signInBtn: android.widget.Button = findViewById(R.id.signInBtn)
         signInBtn.setOnClickListener {
             // Intent to start UserBookingsActivity
-            val intent = Intent(this, user_bookings::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
     }
 }
