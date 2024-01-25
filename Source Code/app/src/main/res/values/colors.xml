@@ -13,6 +13,11 @@
     <color name="redBackground">#ffbfbf</color>
     <color name="redText">#b30000</color>
     <color name="toolbarColor">#fca311</color>
+    <color name="purple_200">#63FF00</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#fca311</color>
+    <color name="teal_700">#FF018786</color>
 
     <color name="lightFloatingColor">#14213d</color>
     <color name="darkFloatingColor">#009EFF</color>
