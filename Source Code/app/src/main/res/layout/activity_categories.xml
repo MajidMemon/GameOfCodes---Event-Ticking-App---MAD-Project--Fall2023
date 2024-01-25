@@ -165,37 +165,145 @@ tools:context=".categories">
     android:layout_width="240dp"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:background="@android:color/white">
+    android:background="@color/backgroundGrey">
 
     <!-- Add your category cards here -->
     <!-- For simplicity, I'm using TextViews as placeholders, replace them with your ImageView and other views as needed -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Category 1"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/backgroundGrey"
+        android:background="@color/backgroundGrey">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Category 2"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_cancel_24"
+            android:layout_alignParentEnd="true">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Category 3"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"/>
+        </ImageView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Category 4"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/event_default">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concerts"
+            android:textStyle="bold"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/backgroundGrey"
+        android:background="@color/backgroundGrey">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_cancel_24"
+            android:layout_alignParentEnd="true">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/event_default">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concerts"
+            android:textStyle="bold"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/backgroundGrey"
+        android:background="@color/backgroundGrey">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_cancel_24"
+            android:layout_alignParentEnd="true">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/event_default">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concerts"
+            android:textStyle="bold"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/backgroundGrey"
+        android:background="@color/backgroundGrey">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_cancel_24"
+            android:layout_alignParentEnd="true">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/event_default">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concerts"
+            android:textStyle="bold"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </RelativeLayout>
 
 </RelativeLayout>
 
