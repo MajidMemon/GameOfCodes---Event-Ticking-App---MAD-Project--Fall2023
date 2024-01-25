@@ -1,0 +1,50 @@
+CREATE TABLE Users (
+    `User ID` INT PRIMARY KEY,
+    Username VARCHAR(255),
+    `User email address` VARCHAR(255),
+    `User phone number` INT,
+    `User password` INT,
+    `Is event manager` BOOLEAN
+);
+
+CREATE TABLE Events (
+    Event ID` INT PRIMARY KEY,
+    Event title` VARCHAR(255),
+    Event date` DATE,
+    Event time` TIME,
+    Event description` TEXT,
+    Event price` DECIMAL(10, 2),
+    Event location` VARCHAR(255),
+    Event city` VARCHAR(255),
+    Event category` VARCHAR(255),
+    Event image` BLOB
+);
+
+CREATE TABLE UserBookings (
+    Booking ID` INT PRIMARY KEY,
+    Booking title` VARCHAR(255),
+    Booking category` VARCHAR(255),
+    Booking payment status` BOOLEAN,
+    FOREIGN KEY (`ticket ID`) REFERENCES Ticket(`ticket ID`),
+    FOREIGN KEY (`User ID`) REFERENCES Users(`User ID`),
+    FOREIGN KEY (`Event ID`) REFERENCES Events(`Event ID`),
+    FOREIGN KEY (`User ID`) REFERENCES Users(`User ID`)
+);
+
+CREATE TABLE BookingStatus (
+    `Booking ID` INT PRIMARY KEY,
+    `Booking confirmation` BOOLEAN,
+    `Upcoming event` BOOLEAN,
+    `Past event` BOOLEAN,
+    `Cancelled event` BOOLEAN,
+     FOREIGN KEY (`Booking ID`) REFERENCES UserBookings(`Booking ID`)
+);
+
+CREATE TABLE Ticket (
+    `Ticket ID` INT PRIMARY KEY,
+    `FOREIGN KEY (`User ID`) REFERENCES Users(`User ID`),
+    ` FOREIGN KEY (`Event ID`) REFERENCES Events(`Event ID`),
+    `QR Code binary` BLOB,
+    FOREIGN KEY (`User ID`) REFERENCES Users(`User ID`),
+    FOREIGN KEY (`Event ID`) REFERENCES Events(`Event ID`)
+);
