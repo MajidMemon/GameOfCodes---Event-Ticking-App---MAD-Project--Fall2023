@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MADTicketingApp"
         tools:targetApi="31">
         <activity
+            android:name=".categories"
+            android:exported="false" />
+        <activity
             android:name=".open_events"
             android:exported="false" />
         <activity
@@ -20,9 +23,6 @@
             android:exported="false" />
         <activity
             android:name=".favorite_events"
-            android:exported="false" />
-        <activity
-            android:name=".event_card_item"
             android:exported="false" />
         <activity
             android:name=".UserEvents"
