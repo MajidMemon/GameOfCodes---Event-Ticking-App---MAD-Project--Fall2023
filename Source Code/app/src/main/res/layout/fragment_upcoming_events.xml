@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpcomingEventsFragment">
+
+    <!-- Include the menu layout inside the fragment container -->
+    <include
+        android:id="@+id/include_menu"
+        layout="@layout/menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView and other components moved inside the fragment container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/include_menu">
+
+        <TextView
+            android:id="@+id/tvUpcomingEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Upcoming Events"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="320dp"/>
+
+        <TextView
+            android:id="@+id/tvUpcomingEventsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Check out the events you've signed up for."
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="350dp"/>
+
+        <!-- Add your additional layout components here -->
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

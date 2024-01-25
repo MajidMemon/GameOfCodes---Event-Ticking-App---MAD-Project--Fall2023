@@ -67,6 +67,8 @@
     <string name="enter_the_otp_number">Enter The OTP Number</string>
     <string name="verify_otp">Verify OTP</string>
     <string name="welcome">Welcome 🎉</string>
+    <string name="welcome_to_your_past_events">Welcome to Your Past Events</string>
+    <string name="welcome_to_your_upcoming_events">Welcome to your Upcoming Events</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="update">Update</string>

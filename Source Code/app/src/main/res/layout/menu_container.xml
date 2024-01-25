@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/app_logo_background"
+    android:padding="10dp">
+
+<Button
+android:id="@+id/upcomingEvents"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Upcoming"
+android:backgroundTint="@color/accentRed"
+    android:textColor="@color/white"
+    android:layout_margin="5dp"/>
+
+<Button
+android:id="@+id/pastEvents"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Past"
+android:backgroundTint="@color/backgroundGrey"
+    android:textColor="@color/black"
+    android:layout_margin="5dp"/>
+
+    <Button
+    android:id="@+id/cancelledEvents"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Cancelled"
+    android:backgroundTint="@color/backgroundGrey"
+    android:textColor="@color/black"
+    android:layout_margin="5dp"/>
+    </LinearLayout>

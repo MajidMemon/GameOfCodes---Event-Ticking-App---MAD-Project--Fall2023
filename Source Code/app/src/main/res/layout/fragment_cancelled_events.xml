@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CancelledEventsFragment">
+
+    <!-- Add the fragment container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Include the menu layout at the top -->
+        <include
+            android:id="@+id/include_menu"
+            layout="@layout/menu_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- TextView centered vertically below the menu -->
+        <TextView
+            android:id="@+id/tvCancelledEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Cancelled Events"
+            android:paddingTop="320dp"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            app:layout_constraintTop_toBottomOf="@+id/include_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tvCancelledEventsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Check out the events that have been cancelled."
+            android:paddingTop="350dp"
+            app:layout_constraintTop_toBottomOf="@id/tvCancelledEvents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <!-- Add your additional layout components here -->
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

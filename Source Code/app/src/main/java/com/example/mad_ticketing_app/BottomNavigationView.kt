@@ -19,7 +19,6 @@ class BottomNavigationView {
                         }
                         true
                     }
-
                     R.id.events -> {
                         if (activity !is UserEvents) {
                             val intent = Intent(activity, UserEvents::class.java)
@@ -28,32 +27,22 @@ class BottomNavigationView {
                         }
                         true
                     }
-
                     R.id.favorites -> {
-                        if (activity !is favorite_events) {
-                            val intent = Intent(activity, favorite_events::class.java)
+                        if (activity !is favorite_events) { // Ensure your class name is correct here
+                            val intent = Intent(activity, favorite_events::class.java) // Ensure your class name is correct here
                             activity.startActivity(intent)
                             activity.overridePendingTransition(0, 0)
                         }
                         true
                     }
-
                     else -> false
                 }
             }
         }
 
+
         fun setSelectedItem(bottomNavigationView: BottomNavigationView, itemId: Int) {
             bottomNavigationView.selectedItemId = itemId
-        }
-
-        fun setOnNavigationItemSelectedListener(
-            bottomNavigationView: BottomNavigationView,
-            onNavItemSelected: (MenuItem) -> Boolean
-        ) {
-            bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-                onNavItemSelected(item)
-            }
         }
     }
 }
