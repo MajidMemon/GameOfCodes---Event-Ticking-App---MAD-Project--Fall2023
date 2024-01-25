@@ -45,97 +45,12 @@
         </LinearLayout>
 
 <!--        Cards that contain info about favorite events -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp">
 
-<!--            Container which will contain all the assets, etc-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingVertical="8dp">
-
-<!--                Upper container containing event info -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <!-- Left side: Small picture -->
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/event_default"
-                        android:scaleType="centerCrop"/>
-
-                    <!-- Right side: Event title and category -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="8dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp">
-
-                        <!-- Event Title -->
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Fast and Furious 7"
-                            android:textSize="18sp"
-                            android:textStyle="bold"/>
-
-                        <!-- Event Category -->
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Hollywood movie"
-                            android:textSize="16sp"
-                            android:textColor="@android:color/darker_gray"
-                            android:layout_marginTop="8dp"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-<!--                Lower container containing action buttons -->
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Remove from favorites"
-                        android:id="@+id/favoritesAddButton"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginLeft="15dp"
-                        android:backgroundTint="@color/backgroundGrey"
-                        android:textColor="@color/black">
-
-                    </Button>
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="View Ticket"
-                        android:id="@+id/viewTicketButton"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginRight="15dp"
-                        android:backgroundTint="@color/accentRed">
-
-                    </Button>
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/favoritesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
 

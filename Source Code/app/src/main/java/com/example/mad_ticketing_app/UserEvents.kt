@@ -60,20 +60,11 @@ class UserEvents : AppCompatActivity() {
         val events = ArrayList<Event>()
 
         events.add(Event(R.layout.event_card, "Event 1", 50, 25, "May", "Location 1"))
-
-
         // Initialize the RecyclerView
-
         recyclerView.layoutManager = LinearLayoutManager(this)
-
-
         // Create the adapter and set it to the RecyclerView
-
         val adapter = EventAdapter(events)
-
         recyclerView.adapter = adapter
-
-
     }
 
     private fun switchFragment(targetFragment: Fragment) {
