@@ -2,8 +2,11 @@ package com.example.mad_ticketing_app
 
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -28,6 +31,9 @@ class UserEvents : AppCompatActivity() {
 
 //    OnCreate method
 
+
+
+
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         val recyclerView = findViewById<RecyclerView>(R.id.eventCardRecycler)
@@ -38,7 +44,11 @@ class UserEvents : AppCompatActivity() {
 
         val bottomNavigationView = binding.bottomNavigationView
 
-
+        val addeventbtn = findViewById<Button>(R.id.addeventbutton)
+        addeventbtn.setOnClickListener {
+            val intent = Intent(this, Activity_add_event::class.java)
+            startActivity(intent)
+        }
         // Set up the item selection listener
         bottomNavigationView.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
